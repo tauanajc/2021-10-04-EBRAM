@@ -77,7 +77,7 @@ displayed if the 'eventbrite' field in the header is not set.
 {% endif %}
 
 
-<h2 id="general">General Information</h2>
+<h2 id="general">Informações Gerais</h2>
 
 {% comment %}
 INTRODUCTION
@@ -353,7 +353,7 @@ of code below the Schedule `<h2>` header below with
 `{% include custom-schedule.html %}`.
 {% endcomment %}
 
-<h2 id="schedule">Schedule</h2>
+<h2 id="schedule">Programa</h2>
 
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
