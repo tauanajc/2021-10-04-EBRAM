@@ -1,6 +1,12 @@
+Repositório do [site do curso Análise e visualização de dados em R](https://tauanajc.github.io/2021-10-04-EBRAM-R), oferecido para participantes do XXVII Encontro Brasileiro de Malacologia - EBRAM, em outubro de 2021.
+
+Abaixo estão instruções sobre o template de workshops do Carpentries que usei para fazer esse site.
+
+__________
+
 [![Website](https://github.com/carpentries/workshop-template/actions/workflows/website.yml/badge.svg)](https://github.com/carpentries/workshop-template/actions/workflows/website.yml)
 
-# The Carpentries Workshop Template
+## The Carpentries Workshop Template
 
 This repository is The Carpentries' ([Software Carpentry][swc-site], [Data Carpentry][dc-site], and
 [Library Carpentry][lc-site]'s) template for creating websites for workshops.
