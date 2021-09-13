@@ -416,7 +416,7 @@ to include the relevant installation instrucctions.
 {% comment %}
 These are the installation instructions for the tools used
 during the workshop.
-{% endcomment %}
+
 
 {% if site.carpentry == "swc" %}
 {% include swc/setup.html %}
@@ -429,3 +429,98 @@ Please check the "Setup" page of
 [the lesson site]({{ site.incubator_lesson_site }}) for instructions to follow
 to obtain the software and data you will need to follow the lesson.
 {% endif %}
+{% endcomment %}
+
+### R and RStudio
+
+* R e RStudio são instalados separadamente. R é o ambiente
+de programação por trás do RStudio, mas usar o R sozinho
+é pouco prático. RStudio é uma interface gráfica que faz
+o uso do R mais fácil e interativo. É necessário instalar o R antes de
+instalar o RStudio. Depois da instalação dos dois programas, temos que baixar também
+um pacote específico de R já usando o RStudio. Siga as instruções de acordo com seu sistema operacional,
+e depois veja ao fim da página sobre como instalar o pacote **`tidyverse`**.
+
+#### Windows
+
+> ## Se você já tem R e RStudio instalados
+>
+> * Abra o RStudio e clique em "Help" > "Check for updates". Se uma nova versão estiver disponível,
+> feche o RStudio, e baixe a última versão.
+> * Para checar qual versão do R você está usando, abra o RStudio e a primeira mensagem
+> que aparece no console indica a sua versão atual.
+> Digitar `sessionInfo()` no console também mostrará a versão do R.
+> Cheque no [site do CRAN](https://cran.r-project.org/bin/windows/base/) se uma versão
+> de R mais recente está disponível. Caso sim, baixe e instale essa nova versão.
+> Caso queira, você pode ver como [remover versões de R antigas](https://cran.r-project.org/bin/windows/base/rw-FAQ.html#How-do-I-UNinstall-R_003f)
+> do seu computador.
+>
+> * Siga os [passos para todos](#for-everyone) no final dessa página.
+{: .solution}
+
+> ## Se você não tem R e RStudio instalados
+>
+> * Baixe o R do
+>  [site do CRAN](https://cran.r-project.org/bin/windows/base/release.htm).
+> * Abra o arquivo `.exe` que foi baixado.
+> * Visite a [página de download do RStudio](https://www.rstudio.com/products/rstudio/download/#download).
+> * Na seção *Installers*, selecione **RStudio x.yy.zzz - Windows Vista/7/8/10** (onde x, y, and z representam o número da versão)
+> * Clique no link para instalar.
+> * Uma vez instalado, abra o RStudio para garantir que está funcionando e que nenhuma mensagem de erro aparece.
+>
+> * Siga os passos [para todos](#for-everyone) no final dessa página.
+{: .solution}
+
+
+#### macOS
+
+> ## Se você já tem R e RStudio instalados
+>
+> * Abra o RStudio e clique em "Help" > "Check for updates". Se uma nova versão estiver disponível,
+> feche o RStudio, e baixe a última versão.
+> * Para checar qual versão do R você está usando, abra o RStudio e a primeira mensagem
+> que aparece no console indica a sua versão atual.
+> Digitar `sessionInfo()` no console também mostrará a versão do R.
+> Cheque no [site do CRAN](https://cran.r-project.org/bin/macosx/) se uma versão
+> de R mais recente está disponível. Caso sim, baixe e instale essa nova versão.
+>
+> * Siga os passos [para todos](#for-everyone) no final dessa página.
+{: .solution}
+
+> ## Se você não tem R e RStudio instalados
+>
+> * Baixe o R do
+>  [site do CRAN](https://cran.r-project.org/bin/macosx/).
+> * Selecione o arquivo `.pkg` para a versão mais recente.
+> Clique no arquivo que foi baixado para instalar o R.
+> Também é uma boa ideia baixar o [XQuartz](https://www.xquartz.org/), usado por alguns pacotes.
+> * Visite a [página de download do RStudio](https://www.rstudio.com/products/rstudio/download/#download).
+> * Na seção *Installers*, selecione **RStudio x.yy.zzz - Mac OS X 10.6+ (64-bit)** (onde x, y, and z representam o número da versão)
+> * Clique no link para instalar.
+> * Uma vez instalado, abra o RStudio para garantir que está funcionando e que nenhuma mensagem de erro aparece.
+>
+> * Siga os passos [para todos](#for-everyone) no final dessa página.
+{: .solution}
+
+#### Linux
+
+> * Siga as instruções para sua distribuição a partir do
+> [CRAN](https://cloud.r-project.org/bin/linux), onde é fornecida informação
+> para baixar a versão mais recent do R para as distribuições mais comuns. Para a maioria das
+> distribuições, você pode usar seu gerenciador de programas (e.g., para Debian/Ubuntu rode
+> `sudo apt-get install r-base`, e para Fedora `sudo yum install R`), mas nós não recomendamos
+> essa estratégia porque as versões disponíveis desse jeito normalmente estão desatualizadas.
+> * Visite a [página de download do RStudio](https://www.rstudio.com/products/rstudio/download/#download).
+> * Na seção *Installers*, selecione a versão compatível com sua distribuição e
+>   instale com seu método preferido (e.g., com Debian/Ubuntu `sudo dpkg -i
+>   rstudio-x.yy.zzz-amd64.deb` no terminal).
+> * Uma vez instalado, abra o RStudio para garantir que está funcionando e que nenhuma mensagem de erro aparece.
+>
+> * Siga os passos [para todos](#for-everyone) no final dessa página.
+{: .solution}
+
+#### For everyone
+
+* Depois de ter instalado o R e o RStudio, vamos instalar o pacote `tidyverse`. Abra o RStudio clicando no ícone no seu computador, 
+  e digite: `install.packages("tidyverse")`. Você também pode instalar pacotes indo em Tools -> Install Packages e digitando
+  o nome do pacote.
