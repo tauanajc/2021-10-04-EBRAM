@@ -102,7 +102,7 @@ AUDIENCE
 
 Explain who your audience is.  (In particular, tell readers if the
 workshop is only open to people from a particular institution.
-{% endcomment %}
+
 {% if site.carpentry == "swc" %}
 {% include swc/who.html %}
 {% elsif site.carpentry == "dc" %}
@@ -110,6 +110,7 @@ workshop is only open to people from a particular institution.
 {% elsif site.carpentry == "lc" %}
 {% include lc/who.html %}
 {% endif %}
+{% endcomment %}
 
 {% comment %}
 LOCATION
@@ -215,7 +216,7 @@ Display the contact email address set in the configuration file.
 {% endcomment %}
 <p id="contact">
   <strong>Contato:</strong>
-  Email Tauana Cunha em
+  Escreva para Tauana Cunha
   {% if page.email %}
   {% for email in page.email %}
   {% if forloop.last and page.email.size > 1 %}
@@ -259,7 +260,7 @@ Edit the text to match who can attend the workshop. For instance:
   
 <p id="who-can-attend">
     <strong>Quem pode participar?:</strong>
-    [Inscrição](https://www.even3.com.br/xxviiebram2021/#atividades) nesse minicurso é aberta para participantes do [XXVII EBRAM](https://www.even3.com.br/xxviiebram2021/).
+    <a href="https://www.even3.com.br/xxviiebram2021/#atividades">Inscrição</a> nesse minicurso é aberta para participantes do <a href="https://www.even3.com.br/xxviiebram2021">XXVII EBRAM</a>.
 </p>
 
 
@@ -267,7 +268,7 @@ Edit the text to match who can attend the workshop. For instance:
 
 {% comment%}
 CODE OF CONDUCT
-{% endcomment %}
+
 <h2 id="code-of-conduct">Code of Conduct</h2>
 
 <p>
@@ -280,7 +281,7 @@ Everyone who participates in Carpentries activities is required to conform to th
   </a>
 </p>
 <hr/>
-
+{% endcomment %}
 
 {% comment %}
 Collaborative Notes
