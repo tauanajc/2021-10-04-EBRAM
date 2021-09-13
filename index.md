@@ -355,6 +355,9 @@ of code below the Schedule `<h2>` header below with
 
 <h2 id="schedule">Programa</h2>
 
+{% include custom-schedule.html %}
+
+{% comment %}
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
 {% elsif site.carpentry == "dc" %}
@@ -365,6 +368,7 @@ of code below the Schedule `<h2>` header below with
 This workshop is teaching a lesson in [The Carpentries Incubator](https://carpentries-incubator.org/).
 Please check [the lesson homepage]({{ site.incubator_lesson_site }}) for a list of lesson sections and estimated timings.
 {% endif %}
+{% endcomment %}
 
 {% comment %}
 Edit/replace the text above if you want to include a schedule table.
