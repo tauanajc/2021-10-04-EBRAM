@@ -3,13 +3,13 @@ layout: workshop      # DON'T CHANGE THIS.
 # More detailed instructions (including how to fill these variables for an
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
-venue: "Encontro Brasileiro de Malacologia - EBRAM"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
+venue: "XXVII Encontro Brasileiro de Malacologia"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
 address: "online"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
 country: "br"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "pt"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
 latitude: "0"        # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "0"       # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "Oct 04-05, 2021"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humandate: "04-05 Out, 2021"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "13h - 17h BRT"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2021-10-04      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2021-10-05        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
@@ -29,16 +29,6 @@ Edit the values in the block above to be appropriate for your workshop.
 If the value is not 'true', 'false', 'null', or a number, please use
 double quotation marks around the value, unless specified otherwise.
 And run 'make workshop-check' *before* committing to make sure that changes are good.
-{% endcomment %}
-
-
-{% comment %}
-8< ============= For a workshop delete from here =============
-For a workshop please delete the following block until the next dashed-line
-{% endcomment %}
-
-{% comment %}
-8< ============================= until here ==================
 {% endcomment %}
 
 
@@ -155,8 +145,7 @@ address.
 </p>
 {% elsif online == "true_private" %}
 <p id="where">
-  <strong>Where:</strong> This training will take place online.
-  The instructors will provide you with the information you will need to connect to this meeting.
+  <strong>Onde:</strong> Esse minicurso será online. Passaremos o link de conexão por email aos participantes registrados pelo site do EBRAM.
 </p>
 {% endif %}
 
@@ -167,7 +156,7 @@ This block displays the date and links to Google Calendar.
 {% endcomment %}
 {% if page.humandate %}
 <p id="when">
-  <strong>When:</strong>
+  <strong>Quando:</strong>
   {{page.humandate}}.
   {% include workshop_calendar.html %}
 </p>
@@ -179,15 +168,15 @@ SPECIAL REQUIREMENTS
 Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
-  <strong>Requirements:</strong>
+  <strong>Pré-requisitos:</strong>
   {% if online == "false" %}
     Participants must bring a laptop with a
     Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
   {% else %}
-    Participants must have access to a computer with a
-    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
+    Os participantes precisarão de um computador com sistema operacional
+    Mac, Linux, ou Windows no qual tenham permissão para instalar novos programas.
   {% endif %}
-  They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+  Siga as <a href="#setup">instruções de instalação</a> dos programas abaixo.
 </p>
 
 {% comment %}
@@ -197,7 +186,7 @@ Modify the block below if there are any barriers to accessibility or
 special instructions.
 {% endcomment %}
 <p id="accessibility">
-  <strong>Accessibility:</strong>
+  <strong>Accessibilidade:</strong>
 {% if online == "false" %}
   We are committed to making this workshop
   accessible to everybody.  For workshops at a physical location, the workshop organizers have checked that:
@@ -215,9 +204,7 @@ special instructions.
   attempt to provide them.
 </p>
 {% else %}
-  We are dedicated to providing a positive and accessible learning environment for all. Please
-  notify the instructors in advance of the workshop if you require any accommodations or if there is
-  anything we can do to make this workshop more accessible to you.
+  Queremos que esse minicurso seja um ambiente positivo e acessível a todos. Por favor entre em contato antes da data de início se houver alguma coisa que possamos fazer para tornar o evento mais acessível para você.
 </p>
 {% endif %}
 
@@ -227,8 +214,8 @@ CONTACT EMAIL ADDRESS
 Display the contact email address set in the configuration file.
 {% endcomment %}
 <p id="contact">
-  <strong>Contact:</strong>
-  Please email
+  <strong>Contato:</strong>
+  Email Tauana Cunha em
   {% if page.email %}
   {% for email in page.email %}
   {% if forloop.last and page.email.size > 1 %}
@@ -243,14 +230,16 @@ Display the contact email address set in the configuration file.
   {% else %}
   to-be-announced
   {% endif %}
-  for more information.
+  para mais informações.
 </p>
 
+{% comment %}
 <p id="roles">
   <strong>Roles:</strong>
   To learn more about the roles at the workshop (who will be doing what),
   refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
 </p>
+{% endcomment %}
 
 {% comment %}
 WHO CAN ATTEND?
@@ -266,12 +255,13 @@ Edit the text to match who can attend the workshop. For instance:
 - This workshop is open to the public.
 - If you are interested in attending this workshop, contact me@example.com
   for more information
-
-<p id="who-can-attend">
-    <strong>Who can attend?:</strong>
-    This workshop is open to ....
-</p>
 {% endcomment %}
+  
+<p id="who-can-attend">
+    <strong>Quem pode participar?:</strong>
+    [Inscrição](https://www.even3.com.br/xxviiebram2021/#atividades) nesse minicurso é aberta para participantes do [XXVII EBRAM](https://www.even3.com.br/xxviiebram2021/).
+</p>
+
 
 <hr/>
 
@@ -306,10 +296,10 @@ Note we also have a CodiMD (the open-source version of HackMD)
 available at https://codimd.carpentries.org
 {% endcomment %}
 {% if page.collaborative_notes %}
-<h2 id="collaborative_notes">Collaborative Notes</h2>
+<h2 id="collaborative_notes">Caderno de Notas Colaborativo</h2>
 
 <p>
-We will use this <a href="{{ page.collaborative_notes }}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
+Vamos usar esse <a href="{{ page.collaborative_notes }}">documento colaborativo</a> para tomar notas, compartilhar links e código.
 </p>
 <hr/>
 {% endif %}
@@ -317,7 +307,7 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 
 {% comment %}
 SURVEYS - DO NOT EDIT SURVEY LINKS
-{% endcomment %}
+
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 {% if site.carpentry == "incubator" %}
@@ -338,7 +328,7 @@ change the value of `carpentry` to `incubator`.
 {% endif %}
 
 <hr/>
-
+{% endcomment %}
 
 {% comment %}
 SCHEDULE
