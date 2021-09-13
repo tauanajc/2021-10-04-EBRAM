@@ -393,12 +393,6 @@ please preview your site before committing, and make sure to run
 
 <h2 id="setup">Preparação necessária antes do minicurso</h2>
 
-<p>
-  Você precisará dos programas listados abaixo.
-  Uma lista de errors comuns que podem ocorrer durante a instalação é encontrada nessa página (em inglês) do The Carpentries:
-  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
-</p>
-
 {% comment %}
 For online workshops, the section below provides:
 - installation instructions for the Zoom client
@@ -431,9 +425,9 @@ to obtain the software and data you will need to follow the lesson.
 {% endif %}
 {% endcomment %}
 
-### R and RStudio
+#### R and RStudio
 
-* R e RStudio são instalados separadamente. R é o ambiente
+R e RStudio são instalados separadamente. R é o ambiente
 de programação por trás do RStudio, mas usar o R sozinho
 é pouco prático. RStudio é uma interface gráfica que faz
 o uso do R mais fácil e interativo. É necessário instalar o R antes de
@@ -441,7 +435,10 @@ instalar o RStudio. Depois da instalação dos dois programas, temos que baixar 
 um pacote específico de R já usando o RStudio. Siga as instruções de acordo com seu sistema operacional,
 e depois veja ao fim da página sobre como instalar o pacote **`tidyverse`**.
 
-#### Windows
+Uma lista de errors comuns que podem ocorrer durante a instalação é encontrada nessa página (em inglês) do The Carpentries: <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+
+
+##### Windows
 
 > ## Se você já tem R e RStudio instalados
 >
@@ -472,7 +469,7 @@ e depois veja ao fim da página sobre como instalar o pacote **`tidyverse`**.
 {: .solution}
 
 
-#### macOS
+##### macOS
 
 > ## Se você já tem R e RStudio instalados
 >
@@ -502,8 +499,9 @@ e depois veja ao fim da página sobre como instalar o pacote **`tidyverse`**.
 > * Siga os passos [para todos](#for-everyone) no final dessa página.
 {: .solution}
 
-#### Linux
+##### Linux
 
+> ## Instruções Linux
 > * Siga as instruções para sua distribuição a partir do
 > [CRAN](https://cloud.r-project.org/bin/linux), onde é fornecida informação
 > para baixar a versão mais recent do R para as distribuições mais comuns. Para a maioria das
@@ -519,8 +517,8 @@ e depois veja ao fim da página sobre como instalar o pacote **`tidyverse`**.
 > * Siga os passos [para todos](#for-everyone) no final dessa página.
 {: .solution}
 
-#### For everyone
+#### Para todos
 
-* Depois de ter instalado o R e o RStudio, vamos instalar o pacote `tidyverse`. Abra o RStudio clicando no ícone no seu computador, 
-  e digite: `install.packages("tidyverse")`. Você também pode instalar pacotes indo em Tools -> Install Packages e digitando
-  o nome do pacote.
+* Depois de ter instalado o R e o RStudio, vamos instalar o pacote `tidyverse`. Abra o RStudio clicando no ícone do programa
+  no seu computador e digite: `install.packages("tidyverse")`. Você também pode instalar pacotes indo em
+  Tools -> Install Packages e digitando o nome do pacote.
