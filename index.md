@@ -285,28 +285,6 @@ Espera-se que todos os participantes respeitem o <a href="https://docs.carpentri
 <hr/>
 {% endcomment %}
 
-{% comment %}
-Collaborative Notes
-
-If you want to use an Etherpad, go to
-
-https://pad.carpentries.org/YYYY-MM-DD-site
-
-where 'YYYY-MM-DD-site' is the identifier for your workshop,
-e.g., '2015-06-10-esu'.
-
-Note we also have a CodiMD (the open-source version of HackMD)
-available at https://codimd.carpentries.org
-{% endcomment %}
-{% if page.collaborative_notes %}
-<h2 id="collaborative_notes">Caderno de Notas Colaborativo</h2>
-
-<p>
-Vamos usar esse <a href="{{ page.collaborative_notes }}">documento colaborativo</a> para tomar notas, compartilhar links e código.
-</p>
-<hr/>
-{% endif %}
-
 
 {% comment %}
 SURVEYS - DO NOT EDIT SURVEY LINKS
@@ -383,6 +361,29 @@ The lesson taught in this workshop is being piloted and a precise schedule is ye
 {% endif %}
 
 <hr/>
+
+
+{% comment %}
+Collaborative Notes
+
+If you want to use an Etherpad, go to
+
+https://pad.carpentries.org/YYYY-MM-DD-site
+
+where 'YYYY-MM-DD-site' is the identifier for your workshop,
+e.g., '2015-06-10-esu'.
+
+Note we also have a CodiMD (the open-source version of HackMD)
+available at https://codimd.carpentries.org
+{% endcomment %}
+{% if page.collaborative_notes %}
+<h2 id="collaborative_notes">Caderno de Notas Colaborativo</h2>
+
+<p>
+Vamos usar esse <a href="{{ page.collaborative_notes }}">documento colaborativo</a> para tomar notas, compartilhar links e código.
+</p>
+<hr/>
+{% endif %}
 
 
 {% comment %}
@@ -528,3 +529,32 @@ Uma lista de erros comuns que podem ocorrer durante a instalação é encontrada
 * Depois de ter instalado o R e o RStudio, vamos instalar o pacote `tidyverse`. Abra o RStudio clicando no ícone do programa
   no seu computador e digite: `install.packages("tidyverse")`. Você também pode instalar pacotes indo em
   Tools -> Install Packages e digitando o nome do pacote.
+
+
+{% comment %}
+Recursos adicionais
+{% endcomment %}
+
+<h2 id="recursos">Recursos adicionais</h2>
+<p>
+Abaixo estão links para livros online, tutoriais, comunidades de discussão, e galerias de gráficos para servir de inspiração e fonte de código.
+</p>
+
+Livros:
+* [Big Book of R, por Oscar Baruffa](https://www.bigbookofr.com)
+* [R for Beginners, por Emmanuel Paradis](https://cran.r-project.org/doc/contrib/Paradis-rdebuts_en.pdf)
+* [R para Principiantes, por Emmanuel Paradis](https://cran.r-project.org/doc/contrib/rdebuts_es.pdf)
+* [Introdução ao R, por Sergio Miranda Freire](http://lampada.uerj.br/arquivosdb/_book2/introducaoR.html)
+* [R for Data Science - R4DS](https://r4ds.had.co.nz)
+
+Galerias de gráficos ggplot2:
+* [The R Graph Gallery](https://www.r-graph-gallery.com) - vá em ALL no menu para ver todos direto na tela!
+* [Top 50 ggplot2 Visualizations - The Master List (With Full R Code)](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html)
+* [ggplot2 extensions - gallery](https://exts.ggplot2.tidyverse.org/gallery/)
+
+Onde buscar ajuda:
+* [Stack Overflow](https://stackoverflow.com) (com frequência é um dos primeiros resultados quando procuramos ajuda direto no Google)
+* [Rseek](https://rseek.org)
+
+<hr/>
+{% endif %}
