@@ -555,6 +555,3 @@ Galerias de gráficos ggplot2:
 Onde buscar ajuda:
 * [Stack Overflow](https://stackoverflow.com) (com frequência é um dos primeiros resultados quando procuramos ajuda direto no Google)
 * [Rseek](https://rseek.org)
-
-<hr/>
-{% endif %}
